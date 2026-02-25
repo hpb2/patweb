@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Actress Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Your Name</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#showreel" class="nav-link">Showreel</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#motivation" class="nav-link">Motivation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle animate-fade-up">Award-Winning Actress</p>
+                <h1 class="hero-title animate-fade-up delay-1">Your Name</h1>
+                <p class="hero-tagline animate-fade-up delay-2">Bringing stories to life through authentic performance</p>
+                <div class="hero-cta animate-fade-up delay-3">
+                    <a href="#showreel" class="btn btn-primary">Watch Showreel</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="section showreel-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Showreel</h2>
+                <p class="section-subtitle">A glimpse into my performances</p>
+            </div>
+
+            <div class="showreel-container">
+                <div class="video-wrapper">
+                    <!-- Replace with your actual video embed or file -->
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <div class="play-button" id="playButton">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <p>Click to play showreel</p>
+                        <!-- Uncomment and add your video URL -->
+                        <!-- <iframe src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+
+                <div class="showreel-info">
+                    <h3>Featured Work</h3>
+                    <ul class="credits-list">
+                        <li>
+                            <span class="role">Lead Role</span>
+                            <span class="production">"Production Title" - Director Name</span>
+                        </li>
+                        <li>
+                            <span class="role">Supporting Role</span>
+                            <span class="production">"Production Title" - Director Name</span>
+                        </li>
+                        <li>
+                            <span class="role">Guest Star</span>
+                            <span class="production">"TV Series" - Network</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section cv-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <p class="section-subtitle">Experience & Training</p>
+            </div>
+
+            <div class="cv-grid">
+                <!-- Personal Info Card -->
+                <div class="cv-card personal-info">
+                    <div class="card-header">
+                        <h3>Personal Details</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Height</span>
+                                <span class="value">5'7" / 170cm</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Eye Color</span>
+                                <span class="value">Brown</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Hair Color</span>
+                                <span class="value">Dark Brown</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Playing Age</span>
+                                <span class="value">25-35</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Languages</span>
+                                <span class="value">English (Native), French (Fluent)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Accents</span>
+                                <span class="value">RP, American, Irish</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Film & TV -->
+                <div class="cv-card">
+                    <div class="card-header">
+                        <h3>Film & Television</h3>
+                    </div>
+                    <div class="card-content">
+                        <table class="credits-table">
+                            <tbody>
+                                <tr>
+                                    <td class="production">Production Title</td>
+                                    <td class="role">Lead</td>
+                                    <td class="director">Director Name</td>
+                                </tr>
+                                <tr>
+                                    <td class="production">Production Title</td>
+                                    <td class="role">Supporting</td>
+                                    <td class="director">Director Name</td>
+                                </tr>
+                                <tr>
+                                    <td class="production">TV Series</td>
+                                    <td class="role">Recurring</td>
+                                    <td class="director">Network</td>
+                                </tr>
+                                <tr>
+                                    <td class="production">Short Film</td>
+                                    <td class="role">Lead</td>
+                                    <td class="director">Director Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Theatre -->
+                <div class="cv-card">
+                    <div class="card-header">
+                        <h3>Theatre</h3>
+                    </div>
+                    <div class="card-content">
+                        <table class="credits-table">
+                            <tbody>
+                                <tr>
+                                    <td class="production">Play Title</td>
+                                    <td class="role">Character</td>
+                                    <td class="director">Theatre Name</td>
+                                </tr>
+                                <tr>
+                                    <td class="production">Play Title</td>
+                                    <td class="role">Character</td>
+                                    <td class="director">Theatre Name</td>
+                                </tr>
+                                <tr>
+                                    <td class="production">Play Title</td>
+                                    <td class="role">Character</td>
+                                    <td class="director">Theatre Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="cv-card">
+                    <div class="card-header">
+                        <h3>Training</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="training-list">
+                            <li>
+                                <strong>Drama School Name</strong>
+                                <span>BA Acting (Hons)</span>
+                            </li>
+                            <li>
+                                <strong>Workshop/Masterclass</strong>
+                                <span>Instructor Name</span>
+                            </li>
+                            <li>
+                                <strong>Specialized Training</strong>
+                                <span>Stage Combat, Voice</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="cv-card skills-card">
+                    <div class="card-header">
+                        <h3>Special Skills</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="skills-tags">
+                            <span class="skill-tag">Stage Combat</span>
+                            <span class="skill-tag">Dance (Contemporary)</span>
+                            <span class="skill-tag">Singing</span>
+                            <span class="skill-tag">Horse Riding</span>
+                            <span class="skill-tag">Swimming</span>
+                            <span class="skill-tag">Driving License</span>
+                            <span class="skill-tag">Yoga</span>
+                            <span class="skill-tag">Piano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-download">
+                <a href="#" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7,10 12,15 17,10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download Full CV (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Letters Section -->
+    <section id="motivation" class="section motivation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Letters of Motivation</h2>
+                <p class="section-subtitle">Why I do what I do</p>
+            </div>
+
+            <div class="motivation-content">
+                <div class="motivation-tabs">
+                    <button class="tab-btn active" data-tab="artistic">Artistic Statement</button>
+                    <button class="tab-btn" data-tab="personal">Personal Journey</button>
+                    <button class="tab-btn" data-tab="vision">Creative Vision</button>
+                </div>
+
+                <div class="motivation-panels">
+                    <div class="motivation-panel active" id="artistic">
+                        <div class="panel-content">
+                            <div class="quote-mark">"</div>
+                            <h3>My Artistic Statement</h3>
+                            <p>Acting, for me, is not merely a profession—it is a calling to explore the depths of human experience and illuminate truths that words alone cannot convey. Through each character I inhabit, I seek to create authentic connections that transcend the boundaries between performer and audience.</p>
+                            <p>I believe in the transformative power of storytelling. Every role is an opportunity to challenge perspectives, evoke empathy, and spark conversations that matter. My commitment is to approach each project with integrity, vulnerability, and an unwavering dedication to the craft.</p>
+                            <p>Whether on stage or screen, I strive to bring a unique perspective shaped by my diverse training and life experiences. I am drawn to complex characters and stories that push boundaries while remaining deeply human.</p>
+                        </div>
+                    </div>
+
+                    <div class="motivation-panel" id="personal">
+                        <div class="panel-content">
+                            <div class="quote-mark">"</div>
+                            <h3>My Personal Journey</h3>
+                            <p>My journey into acting began when I first stepped onto a stage at age twelve. In that moment, under the warmth of the spotlight, I discovered a world where imagination could become reality, where stories could heal, and where connection transcended spoken language.</p>
+                            <p>Years of training at [Drama School] refined my craft, but it was the experiences outside the classroom that shaped me as an artist. Living abroad, working with diverse communities, and facing personal challenges have all contributed to the emotional depth I bring to my work.</p>
+                            <p>Today, I continue to grow as an artist and human being, seeking roles that challenge me and collaborators who share my passion for meaningful storytelling.</p>
+                        </div>
+                    </div>
+
+                    <div class="motivation-panel" id="vision">
+                        <div class="panel-content">
+                            <div class="quote-mark">"</div>
+                            <h3>My Creative Vision</h3>
+                            <p>I envision a career that spans genres and mediums, from intimate independent films to large-scale theatrical productions. My goal is not fame for its own sake, but the opportunity to participate in projects that leave lasting impressions on audiences and contribute meaningfully to our cultural conversation.</p>
+                            <p>I am particularly passionate about stories that amplify underrepresented voices and explore the complexities of the human condition. I seek collaborations with visionary directors and writers who are committed to pushing artistic boundaries.</p>
+                            <p>Looking ahead, I also aspire to develop my own projects, bringing stories to life that reflect the world as it is and as it could be. The future of storytelling is collaborative, inclusive, and bold—and I am committed to being part of that evolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Let's create something together</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Representation</h4>
+                        <p>Agent Name</p>
+                        <p>Agency Name</p>
+                        <a href="mailto:agent@agency.com">agent@agency.com</a>
+                        <a href="tel:+1234567890">+1 234 567 890</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Direct Contact</h4>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="IMDb">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.31 9.588v.005c-.077-.048-.227-.07-.42-.07v4.815c.27 0 .44-.06.5-.165.062-.104.093-.405.093-.9v-2.953c0-.35-.013-.575-.04-.678-.03-.104-.088-.17-.18-.217l.047.163zm-1.758 5.33h-1.612V9.088h1.612v5.83zm2.627-5.83h1.2v5.83h-1.2v-.698c-.11.174-.226.32-.35.434-.124.113-.254.197-.39.252-.135.055-.268.09-.397.11-.13.02-.327.03-.59.03h-.083V9.087h.083c.378 0 .636.016.78.046.14.03.26.088.36.175.1.087.175.196.225.327.05.13.074.364.074.7v3.016c0 .32-.01.53-.03.625-.02.096-.066.184-.138.267-.07.082-.17.138-.298.167-.13.03-.385.043-.76.043h-.173v.698h1.73c.138 0 .254-.015.348-.045.094-.03.184-.076.27-.138.086-.06.167-.134.24-.217.075-.084.17-.21.287-.375v.775h1.2v-5.83h-1.2v.698c-.117-.166-.212-.29-.287-.375-.073-.084-.154-.156-.24-.217-.086-.062-.176-.107-.27-.138-.094-.03-.21-.045-.348-.045h-1.73v.698h.173c.375 0 .63.013.76.043.128.03.228.085.298.167.072.083.118.17.138.267.02.095.03.305.03.625v3.016c0 .336-.025.57-.074.7-.05.13-.125.24-.225.326-.1.088-.22.146-.36.175-.144.03-.402.046-.78.046h-.083V9.088zm-8.179 0v5.83h1.612V9.088H7zm12.334 8.912H4.666c-.46 0-.833-.373-.833-.833V6.833c0-.46.373-.833.833-.833h14.668c.46 0 .833.373.833.833v10.334c0 .46-.373.833-.833.833zM4.666 4c-1.563 0-2.833 1.27-2.833 2.833v10.334C1.833 18.73 3.103 20 4.666 20h14.668c1.563 0 2.833-1.27 2.833-2.833V6.833C22.167 5.27 20.897 4 19.334 4H4.666z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Spotlight">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p class="footer-note">Website designed with passion</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
