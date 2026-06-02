@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCursor();
     initParallax();
     initTypewriter();
+    initLightbox();
 });
 
 /**
@@ -463,6 +464,41 @@ function initTypewriter() {
         }, 300);
     }, 4000);
     */
+}
+
+/**
+ * Photo lightbox
+ */
+function initLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
+
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxOverlay = lightbox.querySelector('.lightbox-overlay');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    [lightboxClose, lightboxOverlay].forEach(el => {
+        el.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 }
 
 /**
