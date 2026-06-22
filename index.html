@@ -54,8 +54,17 @@
             </div>
 
             <div class="showreel-container">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/H3916Mv9XB4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-wrapper" id="videoWrapper">
+                    <div class="video-cover" id="videoCover">
+                        <img src="https://img.youtube.com/vi/H3916Mv9XB4/maxresdefault.jpg" alt="Showreel" class="video-thumb">
+                        <div class="video-cover-overlay"></div>
+                        <button class="video-play-btn" id="playShowreel" aria-label="Play Showreel">
+                            <div class="play-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <span>Play Showreel</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="showreel-info">

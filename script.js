@@ -138,23 +138,21 @@ function initScrollEffects() {
  * Showreel video functionality
  */
 function initShowreel() {
-    const videoPlaceholder = document.getElementById('videoPlaceholder');
-    const playButton = document.getElementById('playButton');
+    const playBtn = document.getElementById('playShowreel');
+    const cover = document.getElementById('videoCover');
+    const wrapper = document.getElementById('videoWrapper');
 
-    if (videoPlaceholder && playButton) {
-        playButton.addEventListener('click', () => {
-            // Option 1: Open video in modal
-            openVideoModal();
+    if (!playBtn || !cover || !wrapper) return;
 
-            // Option 2: Replace placeholder with iframe
-            // const iframe = document.createElement('iframe');
-            // iframe.src = 'YOUR_VIDEO_URL?autoplay=1';
-            // iframe.setAttribute('allowfullscreen', '');
-            // iframe.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;';
-            // videoPlaceholder.innerHTML = '';
-            // videoPlaceholder.appendChild(iframe);
-        });
-    }
+    playBtn.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/H3916Mv9XB4?autoplay=1&vq=hd1080&rel=0&modestbranding=1';
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        iframe.setAttribute('allowfullscreen', '');
+        cover.remove();
+        wrapper.appendChild(iframe);
+    });
 }
 
 /**
